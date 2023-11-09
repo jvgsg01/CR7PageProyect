@@ -1,0 +1,7 @@
+.mi-div {
+
+    background-image: url(BgBiografia.png); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Escalar la imagen para cubrir todo el div */
+    background-repeat: no-repeat; /* Evitar que se repita la imagen */
+    
+  }
