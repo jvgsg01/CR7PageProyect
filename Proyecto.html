@@ -1,96 +1,121 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <script src="https://kit.fontawesome.com/8c58187fe3.js" crossorigin="anonymous"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CR7</title>
-    <link rel="icon" type="image/png" href="7.png" sizes="16x16">
-    <meta name="theme-color" content="#000000" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/png" href="Img/7.png" sizes="16x16">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-i6NB4V1FUIEJMOd0NXKrKQO3uyYs+iXo3HduSuSLYtRDeY8kGljc9mPfrj6pZmsuXEeLyCu5DBJYgmgfT1eGpQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <meta name="msapplication-TileColor" content="#000000">
-    <meta name="msapplication-TileImage" content="7.png-mstile-144x144.png">
-
-    <link rel="icon" type="image/x-icon" href="7.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="7.png-96x96.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="7.png-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="7.png-16x16.png">
-
-    <link rel="apple-touch-icon" sizes="57x57" href="7.png-icon-57x57.png">
-    <link rel="apple-touch-icon" sizes="60x60" href="7.png-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="7.png-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="7.png-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="7.png-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="7.png-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="7.png-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="7.png-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="7.png-icon-180x180.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="Proyecto.css">
-    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <style>
-
+        /* Agrega un estilo para ocultar inicialmente el párrafo */
+        .card-info {
+            display: none;
+        }
     </style>
-    
+
+
+    <style>
+        <!--HOVER-->
+        .position-relative
+        {
+        transition:
+        box-shadow
+        0.3s
+        ease;
+        }
+        .position-relative:hover
+        {
+        cursor:
+        pointer;
+        box-shadow:
+        0
+        4px
+        8px
+        rgba(255,
+        254,
+        254,
+        0.479);
+        border-radius:
+        8px;
+        }
+    </style>
+
+    <script>
+        // Mostrar Toast de Bienvenida al cargar la página
+        $(document).ready(function () {
+            $('.toast').toast('show');
+        });
+    </script>
 </head>
 
-<body>
 
-    <div class="container-fluid  ">
-<!-- Navbar -->
-        <div class="row">
-            <div class="col-12 p-0">
-                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <div class="container-fluid m-auto">
-                        <a class="navbar-brand " href="#">
-                            <img src="cr7.svg">
-                        </a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                                <li class="nav-item">
-                                    <a class="nav-link active" aria-current="page" href="#">INICIO</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="Biografia">BIOGRAFIA</a>
-                                </li>
-                                <li class="nav-item dropdown ">
-                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                        aria-expanded="false">
-                                        CLUBES
-                                    </a>
-                                    <ul class="dropdown-menu dropdown-menu-dark bg-dark">
-                                        <li><a class="dropdown-item" href="#">SPORTING CP</a></li>
-                                        <li><a class="dropdown-item" href="#">MANCHESTER UNITED FC</a></li>
-                                        <li><a class="dropdown-item" href="#">REAL MADRID CF</a></li>
-                                        <li><a class="dropdown-item" href="#">JUVENTUS FC</a></li>
-                                        <li><a class="dropdown-item" href="#">AL-NASSR FC</a></li>
-                                        <li><a class="dropdown-item" href="#">PORTUGAL</a></li>
-                                    </ul>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">REDES SOCIALES</a>
-                                </li>
-                            </ul>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
 
+    <div class="container-fluid" id="Inicio">
+        <!-- Navbar -->
+        <div id="Inicio">
+            <div class="row">
+                <div class="col-12 p-0">
+                    <nav class="navbar navbar-expand-md navbar-dark bg-dark ">
+                        <div class="container-fluid m-auto">
+                            <a class="navbar-brand" href="#">
+                                <img src="Img/cr7.svg" alt="Logo">
+                            </a>
+                            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                                    <li class="nav-item">
+                                        <a class="nav-link active" aria-current="page" href="#Inicio">INICIO</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#Biografia">BIOGRAFIA</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" role="button" href="#Clubes"
+                                            data-bs-toggle="dropdown" aria-expanded="false">
+                                            CLUBES
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-dark bg-dark">
+                                            <li><a class="dropdown-item" href="#card1">SPORTING CP</a></li>
+                                            <li><a class="dropdown-item" href="#card2">MANCHESTER UNITED FC</a></li>
+                                            <li><a class="dropdown-item" href="#card3">REAL MADRID CF</a></li>
+                                            <li><a class="dropdown-item" href="#card4">JUVENTUS FC</a></li>
+                                            <li><a class="dropdown-item" href="#card5">AL-NASSR FC</a></li>
+                                            <li><a class="dropdown-item" href="#card6">PORTUGAL</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#Redes">REDES SOCIALES</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#Mensajes">APOYO</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                </nav>
-
-
+                    </nav>
+                </div>
             </div>
         </div>
-<!-- Carrousel -->
+        <!-- End Navbar -->
+        <!-- Carrousel -->
         <div class="row">
             <div class="col-12 m-0 p-0 ">
-                <div id="carouselExampleCaptions" class="carousel slide " data-bs-ride="carousel">
+                <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
                     <div class="carousel-indicators ">
                         <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                             class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -105,8 +130,8 @@
                     </div>
                     <div class="carousel-inner container-fluid  p-0 ">
                         <div class="carousel-item active ">
-                            <video autoplay loop muted class="d-block w-100 ">
-                                <source src="1103.mp4" type="video/mp4">
+                            <video autoplay loop muted class="d-block w-100 " >
+                                <source src="Img/1103.mp4" type="video/mp4">
                                 Tu navegador no admite el elemento video.
                             </video>
                             <div class="carousel-caption ">
@@ -114,25 +139,25 @@
                             </div>
                         </div>
                         <div class="carousel-item carousel-inner ">
-                            <img src="CRPSCP.jpg" class="d-block w-100 object-fit-cover  " alt="...">
+                            <img src="Img/CRPSCP.jpg" class="d-block w-100 object-fit-cover  " alt="...">
                             <div class="carousel-caption ">
                                 <h3 class="fw-bold text-start mb-0">SPORTING CP</h3>
                             </div>
                         </div>
                         <div class="carousel-item ">
-                            <img src="CR7UNITEDS.png" class="d-block w-100 object-fit-cover" alt="...">
+                            <img src="Img/CR7UNITEDS.png" class="d-block w-100 object-fit-cover" alt="...">
                             <div class="carousel-caption ">
                                 <h3 class="fw-bold text-start">MANCHESTER UNITED</h3>
                             </div>
                         </div>
                         <div class="carousel-item ">
-                            <img src="CR7JUVENTUS.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                            <img src="Img/CR7JUVENTUS.jpg" class="d-block w-100 object-fit-cover" alt="...">
                             <div class="carousel-caption ">
                                 <h3 class="fw-bold text-start">JUVENTUS FC</h3>
                             </div>
                         </div>
                         <div class="carousel-item ">
-                            <img src="CR7ALNASSR.jpg" class="d-block w-100 object-fit-cover" alt="...">
+                            <img src="Img/CR7ALNASSR.jpg" class="d-block w-100 object-fit-cover" alt="...">
                             <div class="carousel-caption ">
                                 <h3 class="fw-bold text-start">AL-NASSR FC</h3>
                             </div>
@@ -153,18 +178,21 @@
                 </div>
             </div>
         </div>
-<!-- Biografia -->
-        <div class="row mi-div">
+        <!-- End Carrousel-->
+
+        <!-- Biography -->
+        <div class="row p-0" id="Biografia"
+            style="background-image: url('Img/BgBiografia.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
             <div class="row mt-5 mb-5">
-                <div class="col-xl-4 col-xs-12 text-black  fw-bold Nombre" style="font-size: 24px;">
+                <div class="col-md-4 col-xs-12 text-black  fw-bold container-fluid" style="font-size: 24px;">
                     <h1>CRISTIANO <br> RONALDO</h1>
                 </div>
 
-                <div class="col-xl-4 col-sm-12 mt-sm-5 img-fluid text-center">
-                    <img src="Biografia.jpg" alt="" width="250" class="rounded-circle img-fluid">
+                <div class="col-md-4 col-sm-12 mt-sm-5 img-fluid text-center">
+                    <img src="Img/Biografia.jpg" alt="" width="250" class="rounded-circle img-fluid">
                 </div>
 
-                <div class="col-xl-4 col-xs-12  " style="text-align: center;">
+                <div class="col-md-4 col-sm-12 text-xl-center  ">
                     <ul class="list-unstyled ">
                         <li class="d-md-inline-block d-lg-block mx-md-4 mx-lg-0 ">
                             <div class="stats-text  " style="font-size: 14px;">PARTIDOS JUGADOS</div>
@@ -184,166 +212,745 @@
 
         </div>
 
-        
-        <div class="row ">
-            <div class="col-12  ">
+        <div class="row">
+            <div class="col-12">
                 <div id="Biografia" class="row text-center pt-4" style="font-size: 14px;">
-                    <h1 class="text-muted display-4  fw-bold" >BIOGRAFIA</h1>
-                    <p class="lead  d-flex p-5" style="text-align: justify;" >Cristiano Ronaldo dos Santos Aveiro (Funchal, Madeira; 5 de febrero de
-                        1985),
+                    <h1 class="text-muted display-4 fw-bold">BIOGRAFIA</h1>
+                    <p class="lead d-flex p-5" style="text-align: justify;">
+                        Cristiano Ronaldo dos Santos Aveiro (Funchal, Madeira; 5 de febrero de 1985),
                         conocido como Cristiano Ronaldo, es un futbolista portugués. Juega como extremo izquierdo o
                         delantero y su equipo actual es el Al-Nassr F. C. de la Liga Profesional Saudí. Es
                         internacional absoluto con la selección de Portugal, de la cual es capitán, máximo goleador
                         histórico y jugador con más presencias con 203 partidos, logro alcanzado en las eliminatorias
-                        para la Eurocopa 2024, reconocido por el Libro Guinness de los récords.</p>
+                        para la Eurocopa 2024, reconocido por el Libro Guinness de los récords.
+                    </p>
+                    <!--Collapse-->
+                    <div class="card border-0  ">
+                        <div class="card-header bg-white border-0" id="headingOne">
+                            <h5 class="mb-0">
+                                <button class="btn btn-link w-100 text-end text-muted" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                    aria-label="Ver más sobre Cristiano Ronaldo" id="verMasBtn">
+                                    Leer Más
+                                </button>
+                                <button class="btn btn-link w-100 text-end d-none text-muted" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"
+                                    aria-label="Leer Menos sobre Cristiano Ronaldo" id="leerMenosBtn">
+                                    Leer Menos
+                                </button>
+                            </h5>
+                        </div>
 
-                    <details>
-                        <summary class="text-muted text-end " style="font-size: 14px;"  >Leer más</summary>
-                        <p class="lead p-5 " style="text-align: justify;" >Considerado con frecuencia el mejor y más completo futbolista, así como el mayor goleador
-                            del mundo,además de uno de los mejores de todos los tiempos; es uno de los
-                            futbolistas más laureados de la historia, habiendo ganado, entre otras distinciones, cinco
-                            veces el Balón de Oro, cinco premios de la FIFA al mejor jugador del mundo y cuatro Botas de
-                            Oro. En 2020, tuvo el honor de ser elegido el mejor Jugador del Siglo xxi en la gala de los
-                            Globe Soccer Awards, convirtiéndose en el primer futbolista europeo y el primer
-                            portugués en recibirlo, además de ser incluido en el Dream Team del Balón de Oro.
+                        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-bs-parent="#Biografia">
+                            <div class="card-body">
+                                <p class="lead d-flex p-5" style="text-align: justify;">Lorem ipsum dolor sit amet
+                                    consectetur adipisicing elit. Nesciunt dolor blanditiis aliquid dicta rem quod, quam
+                                    ea eos laudantium deserunt ipsam nostrum suscipit temporibus aut tempore nisi
+                                    praesentium repellendus voluptates amet quia provident iusto cupiditate. Quibusdam
+                                    assumenda ipsum corporis ut neque aliquam corrupti. Tempore illum veniam vel
+                                    assumenda, eligendi commodi!</p>
 
-                            Identificado habitualmente en los medios de comunicación con el numerónimo CR7,es,
-                            con 862 goles, el máximo goleador en la historia del fútbol profesionaly con 450,
-                            el máximo goleador histórico del Real Madrid Club de Fútbol,consiguiéndolo en las
-                            nueve temporadas que jugó en este club. Es además, según los portales expertos en
-                            estadísticas históricas de la RSSSF y la IFFHS, el tercer máximo goleador en los campeonatos
-                            de Primera División de Europa, con 498 goles —veinticuatro goles más a nivel mundial para un
-                            total de 523 goles—,siendo estos datos reconocidos por la UEFA y la FIFA.
-
-                            A lo largo de su carrera profesional, ha conseguido batir diversos récords. Entre ellos, se
-                            destacan ser el primer jugador que consiguió ganar cuatro Botas de Oro, el primer jugador en
-                            ganar el Premio Puskás, ser el segundo futbolista más laureado del Balón de Oro (5), ser el
-                            primero en ganar el premio The Best FIFA —y el que más lo ha logrado con dos junto a Robert
-                            Lewandowski y Lionel Messi—, ser el jugador que más veces ha ganado el Premio UEFA al Mejor
-                            Jugador en Europa, con tres títulos,ser el máximo goleador histórico de la selección
-                            portuguesa (123), el máximo goleador mundial a nivel de selecciones (en 2021, ingresando
-                            en el Guinness World Records)y ser el máximo goleador histórico de la Liga de Campeones
-                            (141) contando la fase previa,el jugador con más partidos (187), más asistencias
-                            (42),competición en la que también posee las marcas de más goles en una edición del
-                            torneo —17 goles en 11 partidos (2013-14)—, de más goles en una fase de grupos del torneo
-                            —11 goles en seis partidos (2015-16)— y de más veces máximo goleador del torneo con siete
-                            ediciones. Es, además, el madridista que menos partidos necesitó (92) para alcanzar los cien
-                            goles en el campeonato nacional de Liga y el jugador que menos partidos necesitó (140) para
-                            llegar a 150 goles en la historia de la Liga,el primer futbolista en la historia de
-                            la competición que consiguió marcarle a todos los equipos a los que se enfrentó en una
-                            temporada,el único futbolista capaz de marcar en seis Clásicos consecutivos,o el
-                            único en anotar en seis visitas consecutivas al Camp Nou, estadio de máxima rivalidad para
-                            los blancos.
-
-                            Ronaldo comenzó su carrera en el Sporting Club de Portugal, equipo en el que obtuvo la
-                            Supercopa de Portugal antes de firmar con el Manchester United en 2003 a los 18 años, donde
-                            se consagró como futbolista de élite tras conquistar tres Premier League, dos EFL Cup, una
-                            FA Cup, dos Community Shield, una Liga de Campeones y una Copa Mundial de Clubes, fue
-                            galardonado con el Balón de Oro,el Jugador Mundial de la FIFAy la Bota de Oro,
-                            trofeos que le acreditaban como mejor futbolista del mundo a fecha de 2008.
-
-                            Tras protagonizar el traspaso más caro en la historia del fútbol en su momento,recaló en
-                            el Real Madrid Club de Fútbol, donde mejoró como futbolista llegando a sus más altos
-                            registros en juego y goles. En el club español fue el primer jugador en superar la histórica
-                            cifra de treinta y ocho goles en una temporada de Liga, situando la nueva marca en cuarenta
-                            goles, registro que le sirvió para ganar su segunda Bota de Oro en el 2011. Conquistó
-                            como madridista dos Copas del Rey,dos Ligas, y dos Supercopas de España,
-                            completando así la triple corona española, más cuatro Ligas de Campeones, tres Supercopas de
-                            Europa y tres Copas Mundiales de Clubes. Sus actuaciones le llevaron a conquistar otros
-                            cuatro Balones de Oro —en 2013, 2014, 2016 y 2017 y otras dos Botas de oro —en 2014 y
-                            2015— y a situarse entre los tres mejores jugadores del mundo durante ocho temporadas.En
-                            2018 fichó por la Juventus en un traspaso por valor inicial de 100 millones de euros (88
-                            millones de libras esterlinas), el traspaso más caro para un club italiano y el más caro
-                            para un jugador mayor de 30 años. En el club turinés ganó dos títulos de la Serie A, dos
-                            Supercopas Italianas y una Copa Italia, obteniendo la triple corona italiana, antes de
-                            regresar al Manchester United en 2021.
-
-                            Internacional absoluto con la selección portuguesa desde 2003,ha disputado cinco
-                            Eurocopas, cinco Mundiales, una Copa Confederaciones y dos Ligas de Naciones, en donde sus
-                            máximos logros fueron la obtención de los títulos en la Eurocopa de 2016 y en la Liga de
-                            Naciones 2018-19.En cuanto a la Copa Mundial y a la Copa Confederaciones, un cuarto
-                            lugar en Alemania 2006 y un tercer lugar en Rusia 2017 respectivamente, fueron sus mejores
-                            actuaciones. Es uno de los jugadores miembro del FIFA Century Club, formado por aquellos
-                            futbolistas con más de cien internacionalidades con su selección. Sus 200 partidos le
-                            colocan primero en el listado a fecha de 2023 —el que más ha disputado de la historia de
-                            Portugal— y, lógicamente, también primero a nivel UEFA. En 2015, Ronaldo fue nombrado el
-                            mejor jugador portugués de todos los tiempos por la Federación Portuguesa de Fútbol.
-
-                            Es uno de los atletas más famosos y comercializables del mundo, así como también una de las
-                            figuras más mediáticas de su generación.Fue clasificado como el atleta mejor pagado del
-                            mundo por Forbes en 2016 y 2017, y como el atleta más famoso del mundo por ESPN de 2016 a
-                            2019. Time lo incluyó en su lista de las 100 personas más influyentes en el mundo en 2014.
-                            En el 2020, obtuvo ingresos por 105 millones de dólares, convirtiéndolo en el primer
-                            billonario del fútbol.Para el año siguiente, sus ganancias fueron de 120 millones de
-                            dólares.
-
-                            Desde 2014, es Gran Oficial de la Orden del Infante Don Enrique, uno de los máximos
-                            reconocimientos otorgados en Portugal, por su prestación de servicios relevantes otorgados a
-                            su país, así como su expansión cultural, histórica y de valores.</p>
-                        </p>
-                    </details>
+                                <!-- Puedes seguir agregando secciones según tus necesidades -->
+                            </div>
+                        </div>
+                    </div>
                 </div>
+            </div>
+        </div>
+        <!-- End Biography -->
+
+        <!-- Clubes -->
+        <div class="row bg-dark" id="Clubes">
+            <div class="col-12">
+                <div id="Clubes" class="row text-center pt-4  display-5">
+                    <p class="text-white  fw-bold">CLUBES</p>
+                </div>
+            </div>
+
+            <div class="row container-fluid d-flex justify-content-center mb-2">
+
+                <!-- CARDS -->
+                <!-- CARD1-->
+                <div class="col-3 position-relative p-2" id="card1" onclick="toggleContent(this)">
+                    <!-- Contenedor de la Carta -->
+                    <div class="card text-bg-dark bg-black text-size position-relative">
+                        <!-- Contenido de la Carta -->
+                        <h1 class="card-title fw-bold text-start m-0 text-md">80</h1>
+                        <h2 class="card-subtitle fw-bold text-muted">DC</h2>
+                        <img src="Img/SClogo.png" alt="Imagen" style="width: 35px; height: 35px;" class="img-fluid">
+                        <img src="Img/CardSPC.png" alt="Imagen" class="img-fluid">
+                        <h2
+                            class="card-subtitle text-white fw-bold text-muted text-nowrap d-flex text-md text-lg text-xl text-center">
+                            RONALDO</h2>
+                        <hr class="border align-content-center mb-1 mt-1" style="width: 70%;">
+                        <!-- Iconos y Números -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <svg class="" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px"
+                                viewBox="0 0 256 256" xml:space="preserve" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: #ffffff;
+                                        }
+
+                                        .st1 {
+                                            fill: #d9d9d9;
+                                        }
+                                    </style>
+                                    <path class="st0"
+                                        d="M197.002,25.819h-32.434h-67H65.002c-5.523,0-10,4.477-10,10v86.5v15v86.5c0,5.522,4.477,10,10,10h32.566 l14.684-0.078h37.5l14.743,0.078h32.507c5.522,0,10-4.478,10-10v-86.5c0-2.99,0-12.009,0-15v-86.5 C207.002,30.296,202.524,25.819,197.002,25.819z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M131.002,99.819c-13.953,0-25.711,9.574-29.051,22.5h58.102C156.715,109.394,144.955,99.819,131.002,99.819z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M131.002,159.819c13.953,0,25.713-9.576,29.051-22.5h-58.102C105.291,150.243,117.049,159.819,131.002,159.819z ">
+                                    </path>
+                                    <path class="st1"
+                                        d="M164.568,35.819v14.702h-0.104c-0.367,3.799-3.566,6.77-7.463,6.77h-52c-4.141,0-7.5-3.358-7.5-7.5 c0-0.324,0.027-0.641,0.067-0.954V35.819H65.002v86.5h21.637c3.583-21.254,22.106-37.5,44.362-37.5 c22.258,0,40.781,16.246,44.363,37.5h21.638v-86.5H164.568z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M175.364,137.319c-3.582,21.254-22.105,37.5-44.363,37.5c-22.256,0-40.779-16.246-44.362-37.5H65.002v86.5 h32.566v-12.573c-0.04-0.313-0.067-0.63-0.067-0.954c0-4.143,3.359-7.5,7.5-7.5h52c4.009,0,7.273,3.147,7.48,7.104h0.014v0.279 c0.001,0.039,0.006,0.077,0.006,0.116s-0.005,0.077-0.006,0.116v13.411h32.507v-86.5H175.364z">
+                                    </path>
+                                    <g>
+                                        <path class="st1"
+                                            d="M149.752,221.741h-37.5c-2.894,0-5.24-2.347-5.24-5.24s2.346-5.24,5.24-5.24h37.5 c2.894,0,5.24,2.347,5.24,5.24S152.646,221.741,149.752,221.741z">
+                                        </path>
+                                    </g>
+                                    <g>
+                                        <path class="st1"
+                                            d="M149.752,48.408h-37.5c-2.894,0-5.24-2.346-5.24-5.24s2.346-5.24,5.24-5.24h37.5c2.894,0,5.24,2.346,5.24,5.24 S152.646,48.408,149.752,48.408z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <i class="fa-solid fa-futbol" style="color: #ffffff" width="25px" height="25px"></i>
+                            <i class="fa-solid fa-futbol me-1" style="color: #a0a0a0;" width="25px" height="25px"></i>
+                        </div>
+                        <!-- Números Adicionales -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-white ms-1">31</span>
+                            <span class="text-white">5</span>
+                            <span class="text-white me-2">2</span>
+                        </div>
+                    </div>
+                    <!-- Contenedor del Título y Párrafo -->
+                    <div class="card-info col-9 col-sm-6">
+                        <h3 class="text-white mt-3">Título del Contenido</h3>
+                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <!-- END CARD1-->
+
+                <!-- CARD2-->
+                <div class="col-3 position-relative p-2" id="card2" onclick="toggleContent(this)">
+                    <!-- Contenedor de la Carta -->
+                    <div class="card text-bg-dark bg-black text-size">
+                        <!-- Contenido de la Carta -->
+                        <h1 class="card-title  fw-bold text-start m-0 text-md">94</h1>
+                        <h2 class="card-subtitle fw-bold  text-muted">DC</h2>
+                        <img src="Img/United.png" alt="Imagen" style="width: 35px; height: 35px;" class="img-fluid">
+                        <img src="Img/CardUnited.png" alt="Imagen" class="img-fluid">
+                        <h2 class=" card-subtitle text-white fw-bold text-muted text-nowrap text-size  ">RONALDO</h2>
+                        <hr class=" border align-content-center mb-1 mt-1" style=" width: 70%; ">
+                        <!-- Línea horizontal -->
+                        <!-- Iconos y Números -->
+                        <!--STATS-->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <svg class="" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px"
+                                viewBox="0 0 256 256" xml:space="preserve" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: #ffffff;
+                                        }
+
+                                        .st1 {
+                                            fill: #d9d9d9;
+                                        }
+                                    </style>
+                                    <path class="st0"
+                                        d="M197.002,25.819h-32.434h-67H65.002c-5.523,0-10,4.477-10,10v86.5v15v86.5c0,5.522,4.477,10,10,10h32.566 l14.684-0.078h37.5l14.743,0.078h32.507c5.522,0,10-4.478,10-10v-86.5c0-2.99,0-12.009,0-15v-86.5 C207.002,30.296,202.524,25.819,197.002,25.819z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M131.002,99.819c-13.953,0-25.711,9.574-29.051,22.5h58.102C156.715,109.394,144.955,99.819,131.002,99.819z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M131.002,159.819c13.953,0,25.713-9.576,29.051-22.5h-58.102C105.291,150.243,117.049,159.819,131.002,159.819z ">
+                                    </path>
+                                    <path class="st1"
+                                        d="M164.568,35.819v14.702h-0.104c-0.367,3.799-3.566,6.77-7.463,6.77h-52c-4.141,0-7.5-3.358-7.5-7.5 c0-0.324,0.027-0.641,0.067-0.954V35.819H65.002v86.5h21.637c3.583-21.254,22.106-37.5,44.362-37.5 c22.258,0,40.781,16.246,44.363,37.5h21.638v-86.5H164.568z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M175.364,137.319c-3.582,21.254-22.105,37.5-44.363,37.5c-22.256,0-40.779-16.246-44.362-37.5H65.002v86.5 h32.566v-12.573c-0.04-0.313-0.067-0.63-0.067-0.954c0-4.143,3.359-7.5,7.5-7.5h52c4.009,0,7.273,3.147,7.48,7.104h0.014v0.279 c0.001,0.039,0.006,0.077,0.006,0.116s-0.005,0.077-0.006,0.116v13.411h32.507v-86.5H175.364z">
+                                    </path>
+                                    <g>
+                                        <path class="st1"
+                                            d="M149.752,221.741h-37.5c-2.894,0-5.24-2.347-5.24-5.24s2.346-5.24,5.24-5.24h37.5 c2.894,0,5.24,2.347,5.24,5.24S152.646,221.741,149.752,221.741z">
+                                        </path>
+                                    </g>
+                                    <g>
+                                        <path class="st1"
+                                            d="M149.752,48.408h-37.5c-2.894,0-5.24-2.346-5.24-5.24s2.346-5.24,5.24-5.24h37.5c2.894,0,5.24,2.346,5.24,5.24 S152.646,48.408,149.752,48.408z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <i class="fa-solid fa-futbol" style="color: #ffffff" width="25px" height="25px"></i>
+                            <i class="fa-solid fa-futbol me-1" style="color: #a0a0a0;" width="25px" height="25px"></i>
+                        </div>
+                        <!-- Números Adicionales -->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-white ms-0">346</span>
+                            <span class="text-white">145</span>
+                            <span class="text-white me-1">64</span>
+                        </div>
+                    </div>
+                    <!-- Contenedor del Título y Párrafo -->
+                    <div class="card-info col-9">
+                        <h3 class="text-white mt-3">Título del Contenido</h3>
+                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <!-- END CARD2-->
+
+                <!-- CARD3-->
+                <div class="col-3 position-relative p-2" id="card3" onclick="toggleContent(this)">
+                    <div class="card text-bg-dark bg-black text-size">
+                        <h1 class="card-title  fw-bold text-start m-0 text-md">94</h1>
+                        <h2 class="card-subtitle fw-bold  text-muted">DC</h2>
+                        <img src="Img/RMD.png" alt="Imagen" style="width: 35px; height: 35px;" class="img-fluid">
+                        <img src="Img/CardReal.png" alt="Imagen" class="img-fluid">
+                        <h2 class=" card-subtitle text-white fw-bold text-muted text-nowrap text-size  ">RONALDO</h2>
+                        <hr class="border align-content-center mb-1 mt-1" style=" width: 70%; ">
+                        <!-- Línea horizontal -->
+                        <!--STATS-->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <svg class="" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px"
+                                viewBox="0 0 256 256" xml:space="preserve" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: #ffffff;
+                                        }
+
+                                        .st1 {
+                                            fill: #d9d9d9;
+                                        }
+                                    </style>
+                                    <path class="st0"
+                                        d="M197.002,25.819h-32.434h-67H65.002c-5.523,0-10,4.477-10,10v86.5v15v86.5c0,5.522,4.477,10,10,10h32.566 l14.684-0.078h37.5l14.743,0.078h32.507c5.522,0,10-4.478,10-10v-86.5c0-2.99,0-12.009,0-15v-86.5 C207.002,30.296,202.524,25.819,197.002,25.819z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M131.002,99.819c-13.953,0-25.711,9.574-29.051,22.5h58.102C156.715,109.394,144.955,99.819,131.002,99.819z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M131.002,159.819c13.953,0,25.713-9.576,29.051-22.5h-58.102C105.291,150.243,117.049,159.819,131.002,159.819z ">
+                                    </path>
+                                    <path class="st1"
+                                        d="M164.568,35.819v14.702h-0.104c-0.367,3.799-3.566,6.77-7.463,6.77h-52c-4.141,0-7.5-3.358-7.5-7.5 c0-0.324,0.027-0.641,0.067-0.954V35.819H65.002v86.5h21.637c3.583-21.254,22.106-37.5,44.362-37.5 c22.258,0,40.781,16.246,44.363,37.5h21.638v-86.5H164.568z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M175.364,137.319c-3.582,21.254-22.105,37.5-44.363,37.5c-22.256,0-40.779-16.246-44.362-37.5H65.002v86.5 h32.566v-12.573c-0.04-0.313-0.067-0.63-0.067-0.954c0-4.143,3.359-7.5,7.5-7.5h52c4.009,0,7.273,3.147,7.48,7.104h0.014v0.279 c0.001,0.039,0.006,0.077,0.006,0.116s-0.005,0.077-0.006,0.116v13.411h32.507v-86.5H175.364z">
+                                    </path>
+                                    <g>
+                                        <path class="st1"
+                                            d="M149.752,221.741h-37.5c-2.894,0-5.24-2.347-5.24-5.24s2.346-5.24,5.24-5.24h37.5 c2.894,0,5.24,2.347,5.24,5.24S152.646,221.741,149.752,221.741z">
+                                        </path>
+                                    </g>
+                                    <g>
+                                        <path class="st1"
+                                            d="M149.752,48.408h-37.5c-2.894,0-5.24-2.346-5.24-5.24s2.346-5.24,5.24-5.24h37.5c2.894,0,5.24,2.346,5.24,5.24 S152.646,48.408,149.752,48.408z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <i class="fa-solid fa-futbol" style="color: #ffffff" width="25px" height="25px"></i>
+                            <i class="fa-solid fa-futbol me-1" style="color: #a0a0a0;" width="25px" height="25px"></i>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-white ms-">438</span>
+                            <span class="text-white">450</span>
+                            <span class="text-white ">131</span>
+                        </div>
+                    </div>
+                    <!-- Contenedor del Título y Párrafo -->
+                    <div class="card-info col-9">
+                        <h3 class="text-white mt-3">Título del Contenido</h3>
+                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <!-- END CARD3-->
+
+                <!-- CARD4-->
+                <div class="col-3 position-relative p-2" id="card4" onclick="toggleContent(this)">
+                    <div class="card text-bg-dark bg-black text-size">
+                        <h1 class="card-title  fw-bold text-start m-0 text-md">94</h1>
+                        <h2 class="card-subtitle fw-bold  text-muted">DC</h2>
+                        <img src="Img/Juve.png" alt="Imagen" style="width: 35px; height: 35px;" class="img-fluid">
+                        <img src="Img/CardJuve.png" alt="Imagen" class="img-fluid">
+                        <h2 class=" card-subtitle text-white fw-bold text-muted text-nowrap text-size  ">RONALDO</h2>
+                        <hr class=" border align-content-center mb-1 mt-1" style=" width: 70%; ">
+                        <!-- Línea horizontal -->
+                        <!--STATS-->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <svg class="" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px"
+                                viewBox="0 0 256 256" xml:space="preserve" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: #ffffff;
+                                        }
+
+                                        .st1 {
+                                            fill: #d9d9d9;
+                                        }
+                                    </style>
+                                    <path class="st0"
+                                        d="M197.002,25.819h-32.434h-67H65.002c-5.523,0-10,4.477-10,10v86.5v15v86.5c0,5.522,4.477,10,10,10h32.566 l14.684-0.078h37.5l14.743,0.078h32.507c5.522,0,10-4.478,10-10v-86.5c0-2.99,0-12.009,0-15v-86.5 C207.002,30.296,202.524,25.819,197.002,25.819z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M131.002,99.819c-13.953,0-25.711,9.574-29.051,22.5h58.102C156.715,109.394,144.955,99.819,131.002,99.819z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M131.002,159.819c13.953,0,25.713-9.576,29.051-22.5h-58.102C105.291,150.243,117.049,159.819,131.002,159.819z ">
+                                    </path>
+                                    <path class="st1"
+                                        d="M164.568,35.819v14.702h-0.104c-0.367,3.799-3.566,6.77-7.463,6.77h-52c-4.141,0-7.5-3.358-7.5-7.5 c0-0.324,0.027-0.641,0.067-0.954V35.819H65.002v86.5h21.637c3.583-21.254,22.106-37.5,44.362-37.5 c22.258,0,40.781,16.246,44.363,37.5h21.638v-86.5H164.568z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M175.364,137.319c-3.582,21.254-22.105,37.5-44.363,37.5c-22.256,0-40.779-16.246-44.362-37.5H65.002v86.5 h32.566v-12.573c-0.04-0.313-0.067-0.63-0.067-0.954c0-4.143,3.359-7.5,7.5-7.5h52c4.009,0,7.273,3.147,7.48,7.104h0.014v0.279 c0.001,0.039,0.006,0.077,0.006,0.116s-0.005,0.077-0.006,0.116v13.411h32.507v-86.5H175.364z">
+                                    </path>
+                                    <g>
+                                        <path class="st1"
+                                            d="M149.752,221.741h-37.5c-2.894,0-5.24-2.347-5.24-5.24s2.346-5.24,5.24-5.24h37.5 c2.894,0,5.24,2.347,5.24,5.24S152.646,221.741,149.752,221.741z">
+                                        </path>
+                                    </g>
+                                    <g>
+                                        <path class="st1"
+                                            d="M149.752,48.408h-37.5c-2.894,0-5.24-2.346-5.24-5.24s2.346-5.24,5.24-5.24h37.5c2.894,0,5.24,2.346,5.24,5.24 S152.646,48.408,149.752,48.408z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <i class="fa-solid fa-futbol" style="color: #ffffff" width="25px" height="25px"></i>
+                            <i class="fa-solid fa-futbol me-1" style="color: #a0a0a0;" width="25px" height="25px"></i>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-white">134</span>
+                            <span class="text-white">101</span>
+                            <span class="text-white me-1">22</span>
+                        </div>
+                    </div>
+                    <!-- Contenedor del Título y Párrafo -->
+                    <div class="card-info col-9">
+                        <h3 class="text-white mt-3">Título del Contenido</h3>
+                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <!-- END CARD4-->
+
+                <!-- CARD5-->
+                <div class="col-3 position-relative p-2" id="card5" onclick="toggleContent(this)">
+                    <div class="card text-bg-dark bg-black text-size">
+                        <h1 class="card-title  fw-bold text-start m-0 text-md">86</h1>
+                        <h2 class="card-subtitle fw-bold  text-muted">DC</h2>
+                        <img src="Img/Alnassr.png" alt="Imagen" style="width: 35px; height: 35px;" class="img-fluid">
+                        <img src="Img/CardSaudi.png" alt="Imagen" class="img-fluid">
+                        <h2 class=" card-subtitle text-white fw-bold text-muted text-nowrap text-size  ">RONALDO</h2>
+                        <hr class=" border align-content-center mb-1 mt-1" style=" width: 70%; ">
+                        <!-- Línea horizontal -->
+                        <!--STATS-->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <svg class="" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px"
+                                viewBox="0 0 256 256" xml:space="preserve" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: #ffffff;
+                                        }
+
+                                        .st1 {
+                                            fill: #d9d9d9;
+                                        }
+                                    </style>
+                                    <path class="st0"
+                                        d="M197.002,25.819h-32.434h-67H65.002c-5.523,0-10,4.477-10,10v86.5v15v86.5c0,5.522,4.477,10,10,10h32.566 l14.684-0.078h37.5l14.743,0.078h32.507c5.522,0,10-4.478,10-10v-86.5c0-2.99,0-12.009,0-15v-86.5 C207.002,30.296,202.524,25.819,197.002,25.819z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M131.002,99.819c-13.953,0-25.711,9.574-29.051,22.5h58.102C156.715,109.394,144.955,99.819,131.002,99.819z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M131.002,159.819c13.953,0,25.713-9.576,29.051-22.5h-58.102C105.291,150.243,117.049,159.819,131.002,159.819z ">
+                                    </path>
+                                    <path class="st1"
+                                        d="M164.568,35.819v14.702h-0.104c-0.367,3.799-3.566,6.77-7.463,6.77h-52c-4.141,0-7.5-3.358-7.5-7.5 c0-0.324,0.027-0.641,0.067-0.954V35.819H65.002v86.5h21.637c3.583-21.254,22.106-37.5,44.362-37.5 c22.258,0,40.781,16.246,44.363,37.5h21.638v-86.5H164.568z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M175.364,137.319c-3.582,21.254-22.105,37.5-44.363,37.5c-22.256,0-40.779-16.246-44.362-37.5H65.002v86.5 h32.566v-12.573c-0.04-0.313-0.067-0.63-0.067-0.954c0-4.143,3.359-7.5,7.5-7.5h52c4.009,0,7.273,3.147,7.48,7.104h0.014v0.279 c0.001,0.039,0.006,0.077,0.006,0.116s-0.005,0.077-0.006,0.116v13.411h32.507v-86.5H175.364z">
+                                    </path>
+                                    <g>
+                                        <path class="st1"
+                                            d="M149.752,221.741h-37.5c-2.894,0-5.24-2.347-5.24-5.24s2.346-5.24,5.24-5.24h37.5 c2.894,0,5.24,2.347,5.24,5.24S152.646,221.741,149.752,221.741z">
+                                        </path>
+                                    </g>
+                                    <g>
+                                        <path class="st1"
+                                            d="M149.752,48.408h-37.5c-2.894,0-5.24-2.346-5.24-5.24s2.346-5.24,5.24-5.24h37.5c2.894,0,5.24,2.346,5.24,5.24 S152.646,48.408,149.752,48.408z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <i class="fa-solid fa-futbol" style="color: #ffffff" width="25px" height="25px"></i>
+                            <i class="fa-solid fa-futbol me-1" style="color: #a0a0a0;" width="25px" height="25px"></i>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-white ms-1">35</span>
+                            <span class="text-white">29</span>
+                            <span class="text-white me-1">11</span>
+                        </div>
+                    </div>
+                    <!-- Contenedor del Título y Párrafo -->
+                    <div class="card-info col-9">
+                        <h3 class="text-white mt-3">Título del Contenido</h3>
+                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <!-- END CARD5-->
+
+                <!-- CARD6-->
+                <div class="col-3 position-relative p-2" id="card6" onclick="toggleContent(this)">
+                    <div class="card text-bg-dark bg-black text-size">
+                        <h1 class="card-title  fw-bold text-start m-0 text-md">96</h1>
+                        <h2 class="card-subtitle fw-bold  text-muted">DC</h2>
+                        <img src="Img/Portugal.png" alt="Imagen" style="width: 35px; height: 35px;" class="img-fluid">
+                        <img src="Img/CardPort.png" alt="Imagen" class="img-fluid">
+                        <h2 class=" card-subtitle text-white fw-bold text-muted text-nowrap text-size  ">RONALDO</h2>
+                        <hr class=" border  align-content-center mb-1 mt-1" style=" width: 70%; color: #a0a0a0; ">
+                        <!-- Línea horizontal -->
+                        <!--STATS-->
+                        <div class="d-flex justify-content-between align-items-center">
+                            <svg class="" version="1.1" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="25px"
+                                viewBox="0 0 256 256" xml:space="preserve" fill="#000000">
+                                <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                                <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                                <g id="SVGRepo_iconCarrier">
+                                    <style type="text/css">
+                                        .st0 {
+                                            fill: #ffffff;
+                                        }
+
+                                        .st1 {
+                                            fill: #d9d9d9;
+                                        }
+                                    </style>
+                                    <path class="st0"
+                                        d="M197.002,25.819h-32.434h-67H65.002c-5.523,0-10,4.477-10,10v86.5v15v86.5c0,5.522,4.477,10,10,10h32.566 l14.684-0.078h37.5l14.743,0.078h32.507c5.522,0,10-4.478,10-10v-86.5c0-2.99,0-12.009,0-15v-86.5 C207.002,30.296,202.524,25.819,197.002,25.819z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M131.002,99.819c-13.953,0-25.711,9.574-29.051,22.5h58.102C156.715,109.394,144.955,99.819,131.002,99.819z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M131.002,159.819c13.953,0,25.713-9.576,29.051-22.5h-58.102C105.291,150.243,117.049,159.819,131.002,159.819z ">
+                                    </path>
+                                    <path class="st1"
+                                        d="M164.568,35.819v14.702h-0.104c-0.367,3.799-3.566,6.77-7.463,6.77h-52c-4.141,0-7.5-3.358-7.5-7.5 c0-0.324,0.027-0.641,0.067-0.954V35.819H65.002v86.5h21.637c3.583-21.254,22.106-37.5,44.362-37.5 c22.258,0,40.781,16.246,44.363,37.5h21.638v-86.5H164.568z">
+                                    </path>
+                                    <path class="st1"
+                                        d="M175.364,137.319c-3.582,21.254-22.105,37.5-44.363,37.5c-22.256,0-40.779-16.246-44.362-37.5H65.002v86.5 h32.566v-12.573c-0.04-0.313-0.067-0.63-0.067-0.954c0-4.143,3.359-7.5,7.5-7.5h52c4.009,0,7.273,3.147,7.48,7.104h0.014v0.279 c0.001,0.039,0.006,0.077,0.006,0.116s-0.005,0.077-0.006,0.116v13.411h32.507v-86.5H175.364z">
+                                    </path>
+                                    <g>
+                                        <path class="st1"
+                                            d="M149.752,221.741h-37.5c-2.894,0-5.24-2.347-5.24-5.24s2.346-5.24,5.24-5.24h37.5 c2.894,0,5.24,2.347,5.24,5.24S152.646,221.741,149.752,221.741z">
+                                        </path>
+                                    </g>
+                                    <g>
+                                        <path class="st1"
+                                            d="M149.752,48.408h-37.5c-2.894,0-5.24-2.346-5.24-5.24s2.346-5.24,5.24-5.24h37.5c2.894,0,5.24,2.346,5.24,5.24 S152.646,48.408,149.752,48.408z">
+                                        </path>
+                                    </g>
+                                </g>
+                            </svg>
+                            <i class="fa-solid fa-futbol" style="color: #ffffff" width="25px" height="25px"></i>
+                            <i class="fa-solid fa-futbol me-1" style="color: #a0a0a0;" width="25px" height="25px"></i>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span class="text-white ">203</span>
+                            <span class="text-white">127</span>
+                            <span class="text-white me-1">45</span>
+                        </div>
+                    </div>
+                    <!-- Contenedor del Título y Párrafo -->
+                    <div class="card-info ">
+                        <h3 class="text-white mt-3">Título del Contenido</h3>
+                        <p class="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+
+                </div>
+                <!-- END CARD6-->
+
 
             </div>
 
         </div>
-        
-<!-- Clubes -->
-    <div class="row bg-dark">
-        <div class="col-12">
-            <div id="Clubes" class="row bg-dark text-center pt-4  display-5">
-                <p class="text-white  fw-bold">CLUBES</p>
+        <!-- End Clubes -->
+
+        <!-- Acordeón de Redes Sociales -->
+        <div class="row">
+            <div class="col-12 bg-dark text-bg-dark">
+                <div class="accordion" id="Redes">
+                    <p class="text-white text-center display-5 fw-bold">REDES SOCIALES</p>
+                    <!-- Instagram -->
+                    <div class="accordion-item ">
+                        <h2 class="accordion-header" id="instagramHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#instagramCollapse" aria-expanded="false"
+                                aria-controls="instagramCollapse">
+                                <img src="Img/instagram-svgrepo-com.svg" alt="Instagram Icon" width="20" height="20"
+                                    class="me-2"> Instagram
+                            </button>
+                        </h2>
+                        <div id="instagramCollapse" class="accordion-collapse collapse"
+                            aria-labelledby="instagramHeading" data-bs-parent="#redesAccordion">
+                            <div class="accordion-body align-text-top">
+                                <img src="Img/Twitter.png" alt="" class="img-fluid">
+                                <a href="https://www.instagram.com/cristiano" target="_blank">Cristiano Ronaldo en
+                                    Instagram</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Twitter -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="twitterHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#twitterCollapse" aria-expanded="false" aria-controls="twitterCollapse">
+                                <img src="Img/twitter-svgrepo-com.svg" alt="Twitter Icon" width="20" height="20"
+                                    class="me-2"> Twitter
+                            </button>
+                        </h2>
+                        <div id="twitterCollapse" class="accordion-collapse collapse" aria-labelledby="twitterHeading"
+                            data-bs-parent="#redesAccordion">
+                            <div class="accordion-body">
+                                <img src="Img/Twitter.png" alt="" class="img-fluid"> <br>
+                                <a href="https://twitter.com/Cristiano" target="_blank">Cristiano Ronaldo en Twitter</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Facebook -->
+                    <div class="accordion-item img-fluid">
+                        <h2 class="accordion-header" id="facebookHeading">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#facebookCollapse" aria-expanded="false"
+                                aria-controls="facebookCollapse">
+                                <img src="Img/facebook-svgrepo-com.svg" alt="Facebook Icon" width="20" height="20"
+                                    class="me-2"> Facebook
+                            </button>
+                        </h2>
+                        <div id="facebookCollapse" class="accordion-collapse collapse" aria-labelledby="facebookHeading"
+                            data-bs-parent="#redesAccordion">
+                            <div class="accordion-body">
+                                <img src="Img/Facebook.png" alt="" class="img-fluid">
+                                <a href="https://www.facebook.com/Cristiano" target="_blank">Cristiano Ronaldo en
+                                    Facebook</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
 
-            <div class="col-3">
-                <div class="card text-bg-dark bg-black text-size">
-                    <h1 class="card-title  fw-bold text-start m-0 text-md">80</h1>
-                    <h2 class="card-subtitle fw-bold  text-muted">DC</h2>
-                    <img src="SClogo.png" alt="Imagen" style="width: 35px; height: 35px;" class="img-fluid">
-                    <img src="SPCCARD.png" alt="Imagen" class="img-fluid">
-                    <h2 class=" card-subtitle text-white fw-bold text-muted text-nowrap text-size  ">RONALDO</h2>
-                    <i class="fa-solid fa-futbol" style="color: #ffffff;"></i>
-                    
-                </div>
+        <!--Mensaje-->
+        <div class="row  bg-dark" id="Mensajes">
+            <div class="col-12 bg-dark text-bg-dark">
+                <h2 class="text-center display-5 mb-4 mt-4 fw-bold">Mensaje a Cristiano</h2>
             </div>
 
+            <div class="col-md-6 bg-dark text-bg-dark"><!-- Formulario de Mensajes -->
+                <!-- Formulario de Mensajes -->
+                <form id="messageForm">
+                    <!-- Nombre -->
+                    <div class="form-group">
+                        <label for="name" class="form-control-color font-monospace">Nombre:</label>
+                        <input type="text" class="form-control" id="name" name="name" required>
+                    </div>
 
-            <div class="col-3">
-                <div class="card text-bg-dark bg-black text-size">
-                    <h1 class="card-title  fw-bold text-start m-0 text-md">86</h1>
-                    <h2 class="card-subtitle fw-bold  text-muted">DC</h2>
-                    <img src="Alnassr.png" alt="Imagen" style="width: 35px; height: 35px;" class="img-fluid">
-                    <img src="CARD.png" alt="Imagen" class="img-fluid">
-                    <h2 class=" card-subtitle text-white fw-bold text-muted text-nowrap text-size  ">RONALDO</h2>
-                </div>
+                    <!-- Correo Electrónico -->
+                    <div class="form-group">
+                        <label for="email" class="form-control-color font-monospace">Correo:</label>
+                        <input type="email" class="form-control" id="email" name="email" required>
+                    </div>
+
+                    <!-- Mensaje -->
+                    <div class="form-group pb-2">
+                        <label for="message" class="form-control-color font-monospace">Mensaje:</label>
+                        <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                    </div>
+
+                    <!-- Botón de Enviar -->
+                    <button type="submit" class="btn btn-outline-light">Enviar Mensaje</button>
+
+                    <!-- Alerta de Éxito -->
+                    <div class="alert alert-success" role="alert" style="display: none;">
+                        <i class="fas fa-check-circle"></i> Mensaje enviado con éxito.
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6 bg-dark text-bg-dark"> <!-- Imagen de Cristiano Ronaldo -->
+                <img src="Img/CR7UNITED.jpg" alt="Cristiano Ronaldo" class="img-fluid mt-3">
+
+            </div>
+        </div>
+        <!--End Mensaje-->
+
+        <!-- Toast para mostrar el mensaje de bienvenida -->
+        <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-delay="3000"
+            style="position: fixed; top: 10px; right: 10px;">
+            <div class="toast-header">
+                <strong class="mr-auto">Bienvenido bicholover</strong>
+            </div>
+            <div class="toast-body">
+                ¡Gracias por visitar la Fanpage de Cristiano Ronaldo!
+            </div>
+        </div>
+        <!--TOAST-->
+        <div class="row bg-dark">
+            <div class="col-12 text-center">
+                <!-- Botón para abrir el modal -->
+                <button type="button" class="btn bg-dark text-bg-dark" data-bs-toggle="modal" data-bs-target="#miModal">
+                    FRASES CR7
+                </button>
             </div>
 
-            <div class="col-3">
-                <div class="card text-bg-dark bg-black text-size">
-                    <h1 class="card-title  fw-bold text-start m-0 text-md">86</h1>
-                    <h2 class="card-subtitle fw-bold  text-muted">DC</h2>
-                    <img src="Alnassr.png" alt="Imagen" style="width: 25px; height: 25px;" class="img-fluid">
-                    <img src="CARD.png" alt="Imagen" class="img-fluid">
-                    <h2 class=" card-subtitle text-white fw-bold text-muted text-nowrap text-size  ">RONALDO</h2>
+            <!-- Modal -->
+            <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="cristianoQuotesModalLabel">Citas Célebres de Cristiano Ronaldo
+                            </h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <!-- Contenido del modal -->
+                            <ul>
+                                <li>"Trabaja duro en silencio; deja que tu éxito haga ruido."</li>
+                                <li>"No me importa lo que los demás piensen. Yo disfruto de mi vida con mi propia forma
+                                    de ser."</li>
+                                <li>"En el fútbol, la belleza es fundamental. Pero la belleza sin la expresión de
+                                    carácter no significa nada."</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </div>
-        
+        </div>
 
-
+        <footer class="footer mt-auto p-0 bg-dark text-white">
+            <div class="row bg-dark">
+                <div class="col-12 text-center p-0">
+                    <button type="button" class="btn text-muted" data-bs-toggle="popover" data-bs-placement="top"
+                        title="SIUUUUUU" data-bs-content="Contenido del Popover">
+                        <p class="mb-0">&copy; 2023 Fanpage de Cristiano Ronaldo</p>
+                    </button>
+                </div>
+            </div>
+        </footer>
 
     </div>
 
-    </div>
-    
-    
-    
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
-        crossorigin="anonymous"></script>
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+
+        function toggleContent(element) {
+            // Encuentra el contenedor del título y el párrafo dentro de la carta actual
+            var cardInfo = element.querySelector('.card-info');
+
+            // Alterna la visibilidad del contenedor del título y el párrafo
+            cardInfo.style.display = (cardInfo.style.display === 'none' || cardInfo.style.display === '') ? 'block' : 'none';
+        }
+        
+    </script>
+
+    <script>
+        // Añadir validación de JavaScript al formulario
+        document.getElementById('messageForm').addEventListener('submit', function (event) {
+            var message = document.getElementById('message').value;
+            if (message.trim() === '') {
+                event.preventDefault();
+                event.stopPropagation();
+                document.getElementById('message').classList.add('is-invalid');
+            } else {
+                document.getElementById('message').classList.remove('is-invalid');
+
+                // Mostrar la alerta de éxito
+                document.querySelector('.alert-success').style.display = 'block';
+
+                // Opcional: Puedes reiniciar el formulario después de enviar
+                // document.getElementById('messageForm').reset();
+            }
+
+            this.classList.add('was-validated');
+
+            // Evitar el desplazamiento de la página hacia arriba
+            event.preventDefault();
+        });
+    </script>
+
+    <script>//BTN APARECE/DESAPARECE//
+        document.addEventListener('DOMContentLoaded', function () {
+            const verMasBtn = document.getElementById('verMasBtn');
+            const leerMenosBtn = document.getElementById('leerMenosBtn');
+
+            verMasBtn.addEventListener('click', function () {
+                verMasBtn.classList.add('d-none');
+                leerMenosBtn.classList.remove('d-none');
+            });
+
+            leerMenosBtn.addEventListener('click', function () {
+                leerMenosBtn.classList.add('d-none');
+                verMasBtn.classList.remove('d-none');
+            });
+        });
+    </script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
 </body>
 
 </html>
